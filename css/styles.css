@@ -224,8 +224,6 @@ p {
   -webkit-animation-duration: 22616s;
   -moz-animation-duration: 22616s; }
 
-@-webkit-keyframes orbit {}
-@-moz-keyframes orbit {}
 /* line 1, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-solar-system/css/_planets.sass */
 .sun {
   height: 570px;
