@@ -1,0 +1,59 @@
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary
+  display: block
+
+[hidden] 
+  @extend %hide
+
+html
+  font-family: sans-serif
+  -webkit-text-size-adjust: 100%
+  -ms-text-size-adjust: 100%
+
+body
+  @extend %zero-margin
+  background: black
+  color: white
+
+a
+  color: #303030
+  text-decoration: none
+  font-weight: bold
+
+a:focus
+  outline: thin dotted
+
+a:active,
+a:hover
+  outline: 0
+  color: #FF7142
+
+h1
+  font-size: 2 * $font-size-base
+
+b,
+strong
+  font-weight: bold
+
+img
+  border: 0
+
+ul
+  list-style: none
+  @extend %zero-padding
+
+li
+  display: inline
+
+p
+  margin: 10px

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<head>
+  <title>The Solar System [dankim]</title>
+  <meta charset='UTF-8'>
+  <link href='css/styles.css' media='screen' rel='stylesheet' type='text/css'>
+  <script src='http://code.jquery.com/jquery-1.9.0.min.js' type='text/javascript'></script>
+  <script src='js/solar-system.js' type='text/javascript'></script>
+  <!-- /%script{src: "http://mint.dankim.org/?js", type: "text/javascript"} -->
+</head>
+<body>
+  <section class='name-list'>
+    <ul class='planet-names'>
+      <li class='text-spacer' id='mercury'>
+        Mercury
+      </li>
+      <li class='text-spacer' id='venus'>
+        Venus
+      </li>
+      <li class='text-spacer' id='earth'>
+        Earth
+      </li>
+      <li class='text-spacer' id='mars'>
+        Mars
+      </li>
+      <li class='text-spacer' id='jupiter'>
+        Jupiter
+      </li>
+      <li class='text-spacer' id='saturn'>
+        Saturn
+      </li>
+      <li class='text-spacer' id='uranus'>
+        Uranus
+      </li>
+      <li class='text-spacer' id='neptune'>
+        Neptune
+      </li>
+      <li class='text-spacer' id='pluto'>
+        Pluto
+      </li>
+    </ul>
+    <p class='thanks'>
+      { A huge thanks to <a href="https://twitter.com/necolas" title="Nicolas Gallagher on Twitter">Nicolas Gallagher</a> for providing <a href="http://nicolasgallagher.com/css-pseudo-element-solar-system/demo/" title="Nicolas Gallagher's Solar System">all the math and inspiration</a> for this. }
+    </p>
+  </section>
+  <section class='solar-system'>
+    <ul id='planet-orbits'>
+      <li class='orbit sun'></li>
+      <li class='orbit mercury-orbit' id='orbit-mercury'>
+        <div class='planet mercury'></div>
+      </li>
+      <li class='orbit venus-orbit' id='orbit-venus'>
+        <div class='planet venus'></div>
+      </li>
+      <li class='orbit earth-orbit' id='orbit-earth'>
+        <div class='planet earth'></div>
+      </li>
+      <li class='orbit mars-orbit' id='orbit-mars'>
+        <div class='planet mars'></div>
+      </li>
+      <li class='orbit jupiter-orbit' id='orbit-jupiter'>
+        <div class='planet jupiter shadow'></div>
+      </li>
+      <li class='orbit saturn-orbit' id='orbit-saturn'>
+        <div class='planet saturn-rings shadow'></div>
+        <div class='planet saturn-gap'></div>
+        <div class='planet saturn shadow'></div>
+      </li>
+      <li class='orbit uranus-orbit' id='orbit-uranus'>
+        <div class='planet uranus shadow'></div>
+      </li>
+      <li class='orbit neptune-orbit' id='orbit-neptune'>
+        <div class='planet neptune shadow'></div>
+      </li>
+      <li class='orbit pluto-orbit' id='orbit-pluto'>
+        <div class='planet pluto'></div>
+      </li>
+    </ul>
+  </section>
+</body>
