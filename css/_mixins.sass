@@ -3,9 +3,10 @@
   -moz-box-shadow: $shadows
   box-shadow: inset $shadows
 
-@mixin planet-style($height, $width, $right-offset, $background)
-  +height-width($height, $width)
-  right: $right-offset
+@mixin planet-style($diameter, $background)
+  height: $diameter
+  width: $diameter
+  right: (($diameter / 2) * -1)
   background: $background
 
 @mixin height-width($height, $width)
@@ -16,10 +17,10 @@
   top: $top
   left: $left
 
-@mixin orbit-style($dimensions, $position-offset, $duration)
+@mixin orbit-style($distance, $position, $duration)
   @extend .orbit
-  +height-width($dimensions, $dimensions)
-  +top-left-position-offset($position-offset, $position-offset)
+  +orbit-dimensions($distance)
+  +top-left-position-offset($position, $position)
   +orbit-animation-duration($duration)
 
 @mixin orbit-animation-full($iteration-count, $timing-function, $animation-name)
@@ -35,7 +36,10 @@
   -moz-animation-duration: $duration
 
 @mixin orbit-dimensions($distance)
-  ($sun-size * 2)
+  height: ($sun-size + ($distance * 2))
+  width: ($sun-size + ($distance * 2))
 
-@mixin orbit-position($distance, $position)
-  ($viewport - +orbit-dimensions($distance)) / 2
+// TODO: Call orbit-dimension mixin inside of a calculcation?
+// @mixin orbit-position($distance)
+//   top: (($viewport - +orbit-dimensions($distance)) / 2)
+//   left: (($viewport - +orbit-dimensions($distance)) / 2)

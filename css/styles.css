@@ -242,8 +242,8 @@ p {
 
 /* line 14, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-solar-system/css/_orbits.sass */
 .venus-orbit {
-  height: 602px;
-  width: 602px;
+  height: 600px;
+  width: 600px;
   top: 856px;
   left: 856px;
   -webkit-animation-duration: 56s;
