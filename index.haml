@@ -9,48 +9,39 @@
 %body
   %section.name-list
     %ul#planet-names
-      %li.text-spacer#mercury
-        Mercury
-      %li.text-spacer#venus
-        Venus
-      %li.text-spacer#earth
-        Earth
-      %li.text-spacer#mars
-        Mars
-      %li.text-spacer#jupiter
-        Jupiter
-      %li.text-spacer#saturn
-        Saturn
-      %li.text-spacer#uranus
-        Uranus
-      %li.text-spacer#neptune
-        Neptune
-      %li.text-spacer#pluto
-        Pluto
-    %p.thanks
-      { A huge thanks to <a href="https://twitter.com/necolas" title="Nicolas Gallagher on Twitter">Nicolas Gallagher</a> for providing <a href="http://nicolasgallagher.com/css-pseudo-element-solar-system/demo/" title="Nicolas Gallagher's Solar System">all the math and inspiration</a> for this. }
+      %li#mercury Mercury
+      %li#venus Venus
+      %li#earth Earth
+      %li#mars Mars
+      %li#jupiter Jupiter
+      %li#saturn Saturn
+      %li#uranus Uranus
+      %li#neptune Neptune
+      %li#pluto Pluto
+    %p.thanks 
+      A huge thanks to <a href="https://twitter.com/necolas" title="Nicolas Gallagher on Twitter">Nicolas Gallagher</a> for providing <a href="http://nicolasgallagher.com/css-pseudo-element-solar-system/demo/" title="Nicolas Gallagher's Solar System">all the math and inspiration</a> for this.
   %section.solar-system
     %ul#planet-orbits
-      %li.orbit.sun
-      %li.orbit.mercury-orbit#orbit-mercury
+      %li.sun
+      %li.mercury-orbit#orbit-mercury
         .planet.mercury
-      %li.orbit.venus-orbit#orbit-venus
+      %li.venus-orbit#orbit-venus
         .planet.venus
-      %li.orbit.earth-orbit#orbit-earth
+      %li.earth-orbit#orbit-earth
         .planet.earth
-      %li.orbit.mars-orbit#orbit-mars
+      %li.mars-orbit#orbit-mars
         .planet.mars
-      %li.orbit.jupiter-orbit#orbit-jupiter
+      %li.jupiter-orbit#orbit-jupiter
         .planet.jupiter.shadow
-      %li.orbit.saturn-orbit#orbit-saturn
+      %li.saturn-orbit#orbit-saturn
         .planet.saturn-rings.shadow
         .planet.saturn-gap
         .planet.saturn.shadow
-      %li.orbit.uranus-orbit#orbit-uranus
+      %li.uranus-orbit#orbit-uranus
         .planet.uranus.shadow
-      %li.orbit.neptune-orbit#orbit-neptune
+      %li.neptune-orbit#orbit-neptune
         .planet.neptune.shadow
-      %li.orbit.pluto-orbit#orbit-pluto
+      %li.pluto-orbit#orbit-pluto
         .planet.pluto
 
 

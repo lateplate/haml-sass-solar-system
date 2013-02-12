@@ -1,0 +1,41 @@
+@mixin box-shadow($shadows...) 
+  -webkit-box-shadow: $shadows
+  -moz-box-shadow: $shadows
+  box-shadow: inset $shadows
+
+@mixin planet-style($height, $width, $right-offset, $background)
+  +height-width($height, $width)
+  right: $right-offset
+  background: $background
+
+@mixin height-width($height, $width)
+  height: $height
+  width: $width
+
+@mixin top-left-position-offset($top, $left)
+  top: $top
+  left: $left
+
+@mixin orbit-style($dimensions, $position-offset, $duration)
+  @extend .orbit
+  +height-width($dimensions, $dimensions)
+  +top-left-position-offset($position-offset, $position-offset)
+  +orbit-animation-duration($duration)
+
+@mixin orbit-animation-full($iteration-count, $timing-function, $animation-name)
+  -webkit-animation-iteration-count: $iteration-count
+  -webkit-animation-timing-function: $timing-function
+  -webkit-animation-name: $animation-name
+  -moz-animation-iteration-count: $iteration-count
+  -moz-animation-timing-function: $timing-function
+  -moz-animation-name: $animation-name
+
+@mixin orbit-animation-duration($duration)
+  -webkit-animation-duration: $duration
+  -moz-animation-duration: $duration
+
+@mixin orbit-dimensions($distance)
+  ($sun-size * 2)
+
+@mixin orbit-position($distance, $position)
+  ($viewport - +orbit-dimensions($distance)) / 2

@@ -1,76 +1,47 @@
+.planet
+  position: absolute
+  border-radius: 50%
+  bottom: 50%
+
 .sun
-  height: 570px
-  width: 570px
-  top: 872px
-  left: 872px
+  @extend .orbit
+  +height-width(570px, 570px)
+  +top-left-position-offset(872px, 872px)
   background: -moz-radial-gradient(45px 45px 45deg, circle cover, yellow 0%, orange 100%, red 95%)
   background: -webkit-radial-gradient(45px 45px, circle cover, yellow, orange)
   background: radial-gradient(45px 45px 45deg, circle cover, yellow 0%, orange 100%, red 95%)
 
 .mercury
-  height: 2px
-  width: 2px
-  right: -1px
-  background: #969696
+  +planet-style(2px, 2px, -1px, #969696)
 
 .venus
-  height: 5px
-  width: 5px
-  right: -2.5px
-  background: #FFFF99
+  +planet-style(5px, 5px, -2.5px, #FFFF99)
 
 .earth
-  height: 5px
-  width: 5px
-  right: -2.5px
-  background: #14B1FF
+  +planet-style(5px, 5px, -2.5px, #14B1FF)
 
 .mars
-  height: 3px
-  width: 3px
-  right: -1.5px
-  background: #CC3300
+  +planet-style(3px, 3px, -1.5px, #CC3300)
 
 .jupiter
-  height: 58px
-  width: 58px
-  right: -29px
-  background: #FF6F0F
+  +planet-style(58px, 58px, -29px, #FF6F0F)
 
 .saturn
-  height: 50px
-  width: 50px
-  right: -25px
-  background: #FFFFB3
+  +planet-style(50px, 50px, -25px, #FFFFB3)
 
 .saturn-gap
-  height: 60px
-  width: 60px
-  right: -30px
+  +planet-style(60px, 60px, -30px, black)
   bottom: 482px
-  background: black
 
 .saturn-rings
-  height: 100px
-  width: 100px
-  right: -50px
+  +planet-style(100px, 100px, -50px, #303030)
   bottom: 462px
-  background: #303030
 
 .uranus
-  height: 22px
-  width: 22px
-  right: -11px
-  background: #14B1FF
+  +planet-style(22px, 22px, -11px, #14B1FF)
 
 .neptune
-  height: 20px
-  width: 20px
-  right: -10px
-  background: #0085C7
+  +planet-style(20px, 20px, -10px, #0085C7)
 
 .pluto
-  height: 1px
-  width: 1px
-  right: -0.5px
-  background: #D1A375
+  +planet-style(1px, 1px, -0.5px, #D1A375)

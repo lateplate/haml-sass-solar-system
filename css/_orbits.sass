@@ -2,91 +2,38 @@
   border: 1px solid #3D3D3D
   position: absolute
   border-radius: 50%
-  margin: 0
-  padding: 0
-  -webkit-animation-iteration-count: infinite
-  -webkit-animation-timing-function: linear
-  -webkit-animation-name: orbit
-  -moz-animation-iteration-count: infinite
-  -moz-animation-timing-function: linear
-  -moz-animation-name: orbit
-  
+  @extend zero-box
+  +orbit-animation-full(infinite, linear, orbit)
 
 .active-orbit
-  color: yellow
   border: 1px solid #FF7142
 
 .mercury-orbit
-  height: 586px
-  width: 586px
-  top: 864px
-  left: 864px
-  -webkit-animation-duration: 22s
-  -moz-animation-duration: 22s
+  +orbit-style(586px, 864px, 22s)
 
 .venus-orbit
-  height: 602px
-  width: 602px
-  top: 856px
-  left: 856px
-  -webkit-animation-duration: 56s
-  -moz-animation-duration: 56s
+  +orbit-style(602px, 856px, 56s)
 
 .earth-orbit
-  height: 614px
-  width: 614px
-  top: 850px
-  left: 850px
-  -webkit-animation-duration: 91s
-  -moz-animation-duration: 91s
+  +orbit-style(614px, 850px, 91s)
 
 .mars-orbit
-  height: 634px
-  width: 634px
-  top: 840px
-  left: 840px
-  -webkit-animation-duration: 172s
-  -moz-animation-duration: 172s
+  +orbit-style(634px, 840px, 172s)
 
 .jupiter-orbit
-  height: 790px
-  width: 790px
-  top: 762px
-  left: 762px
-  -webkit-animation-duration: 1083s
-  -moz-animation-duration: 1083s
+  +orbit-style(790px, 762px, 1083s)
 
 .saturn-orbit
-  height: 974px
-  width: 974px
-  top: 670px
-  left: 670px
-  -webkit-animation-duration: 2690s
-  -moz-animation-duration: 2690s
+  +orbit-style(974px, 670px, 2690s)
 
 .uranus-orbit
-  height: 1378px
-  width: 1378px
-  top: 468px
-  left: 468px
-  -webkit-animation-duration: 7671s
-  -moz-animation-duration: 7671s
+  +orbit-style(1378px, 468px, 7671s)
 
 .neptune-orbit
-  height: 1834px
-  width: 1834px
-  top: 240px
-  left: 240px
-  -webkit-animation-duration: 15048s
-  -moz-animation-duration: 15048s
+  +orbit-style(1834px, 240px, 15048s)
 
 .pluto-orbit
-  height: 2314px
-  width: 2314px
-  top: 0
-  left: 0
-  -webkit-animation-duration: 22616s
-  -moz-animation-duration: 22616s
+  +orbit-style(2314px, 0, 22616s)
 
 // @-webkit-keyframes orbit { 
 //   from { -webkit-transform:rotate(0deg) } 

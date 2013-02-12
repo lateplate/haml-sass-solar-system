@@ -10,6 +10,10 @@ ul {
 [hidden] {
   display: none; }
 
+/* line 14, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-solar-system/css/_placeholders.sass */
+.solar-system {
+  margin: 0 auto; }
+
 /* line 1, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-solar-system/css/_normalize.sass */
 article,
 aside,
@@ -54,7 +58,7 @@ a:hover {
 
 /* line 41, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-solar-system/css/_normalize.sass */
 h1 {
-  font-size: 2em; }
+  font-size: 32px; }
 
 /* line 44, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-solar-system/css/_normalize.sass */
 b,
@@ -77,7 +81,7 @@ li {
 p {
   margin: 10px; }
 
-/* line 1, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-solar-system/css/_modules.sass */
+/* line 1, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-solar-system/css/_base.sass */
 .name-list {
   margin: 2px 0 0 2px;
   padding: 2px;
@@ -87,144 +91,42 @@ p {
   background: #0085c7;
   z-index: 1;
   border-radius: 3px; }
+  /* line 9, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-solar-system/css/_base.sass */
+  .name-list li {
+    margin: 10px; }
 
-/* line 11, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-solar-system/css/_modules.sass */
+/* line 12, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-solar-system/css/_base.sass */
 .active-list-item {
   color: #ff7142;
   text-decoration: underline; }
 
-/* line 15, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-solar-system/css/_modules.sass */
+/* line 16, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-solar-system/css/_base.sass */
 .solar-system {
   height: 2314px;
   width: 2314px;
-  margin: 0 auto;
-  position: absolute;
   top: -75%;
-  left: -50%; }
+  left: -50%;
+  position: absolute; }
 
-/* line 23, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-solar-system/css/_modules.sass */
+/* line 22, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-solar-system/css/_base.sass */
+.shadow {
+  /*Liberally borrowed from Nicholas Gallagher
+   * http://nicolasgallagher.com/css-pseudo-element-solar-system/demo/ */
+  -webkit-box-shadow: -10px 0 10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -10px 0 10px rgba(0, 0, 0, 0.75);
+  box-shadow: inset -10px 0 10px rgba(0, 0, 0, 0.75); }
+
+/* line 27, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-solar-system/css/_base.sass */
+.thanks {
+  font-size: 13px; }
+
+/* line 1, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-solar-system/css/_planets.sass */
 .planet {
   position: absolute;
   border-radius: 50%;
   bottom: 50%; }
 
-/* line 28, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-solar-system/css/_modules.sass */
-.shadow {
-  /*Liberally borrowed from Nicholas Gallagher
-   * http://nicolasgallagher.com/css-pseudo-element-solar-system/demo/ */
-  -webkit-box-shadow: inset -10px 0 10px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: inset -10px 0 10px rgba(0, 0, 0, 0.75);
-  box-shadow: inset -10px 0 10px rgba(0, 0, 0, 0.75); }
-
-/* line 35, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-solar-system/css/_modules.sass */
-.text-spacer {
-  margin: 10px; }
-
-/* line 38, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-solar-system/css/_modules.sass */
-.thanks {
-  font-size: 13px; }
-
-/* line 1, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-solar-system/css/_orbits.sass */
-.orbit {
-  border: 1px solid #3d3d3d;
-  position: absolute;
-  border-radius: 50%;
-  margin: 0;
-  padding: 0;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-  -webkit-animation-name: orbit;
-  -moz-animation-iteration-count: infinite;
-  -moz-animation-timing-function: linear;
-  -moz-animation-name: orbit; }
-
-/* line 15, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-solar-system/css/_orbits.sass */
-.active-orbit {
-  color: yellow;
-  border: 1px solid #ff7142; }
-
-/* line 19, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-solar-system/css/_orbits.sass */
-.mercury-orbit {
-  height: 586px;
-  width: 586px;
-  top: 864px;
-  left: 864px;
-  -webkit-animation-duration: 22s;
-  -moz-animation-duration: 22s; }
-
-/* line 27, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-solar-system/css/_orbits.sass */
-.venus-orbit {
-  height: 602px;
-  width: 602px;
-  top: 856px;
-  left: 856px;
-  -webkit-animation-duration: 56s;
-  -moz-animation-duration: 56s; }
-
-/* line 35, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-solar-system/css/_orbits.sass */
-.earth-orbit {
-  height: 614px;
-  width: 614px;
-  top: 850px;
-  left: 850px;
-  -webkit-animation-duration: 91s;
-  -moz-animation-duration: 91s; }
-
-/* line 43, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-solar-system/css/_orbits.sass */
-.mars-orbit {
-  height: 634px;
-  width: 634px;
-  top: 840px;
-  left: 840px;
-  -webkit-animation-duration: 172s;
-  -moz-animation-duration: 172s; }
-
-/* line 51, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-solar-system/css/_orbits.sass */
-.jupiter-orbit {
-  height: 790px;
-  width: 790px;
-  top: 762px;
-  left: 762px;
-  -webkit-animation-duration: 1083s;
-  -moz-animation-duration: 1083s; }
-
-/* line 59, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-solar-system/css/_orbits.sass */
-.saturn-orbit {
-  height: 974px;
-  width: 974px;
-  top: 670px;
-  left: 670px;
-  -webkit-animation-duration: 2690s;
-  -moz-animation-duration: 2690s; }
-
-/* line 67, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-solar-system/css/_orbits.sass */
-.uranus-orbit {
-  height: 1378px;
-  width: 1378px;
-  top: 468px;
-  left: 468px;
-  -webkit-animation-duration: 7671s;
-  -moz-animation-duration: 7671s; }
-
-/* line 75, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-solar-system/css/_orbits.sass */
-.neptune-orbit {
-  height: 1834px;
-  width: 1834px;
-  top: 240px;
-  left: 240px;
-  -webkit-animation-duration: 15048s;
-  -moz-animation-duration: 15048s; }
-
-/* line 83, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-solar-system/css/_orbits.sass */
-.pluto-orbit {
-  height: 2314px;
-  width: 2314px;
-  top: 0;
-  left: 0;
-  -webkit-animation-duration: 22616s;
-  -moz-animation-duration: 22616s; }
-
-/* line 1, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-solar-system/css/_planets.sass */
+/* line 6, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-solar-system/css/_planets.sass */
 .sun {
   height: 570px;
   width: 570px;
@@ -234,81 +136,178 @@ p {
   background: -webkit-radial-gradient(45px 45px, circle cover, yellow, orange);
   background: radial-gradient(45px 45px 45deg, circle cover, yellow 0%, orange 100%, red 95%); }
 
-/* line 10, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-solar-system/css/_planets.sass */
+/* line 14, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-solar-system/css/_planets.sass */
 .mercury {
   height: 2px;
   width: 2px;
   right: -1px;
   background: #969696; }
 
-/* line 16, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-solar-system/css/_planets.sass */
+/* line 17, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-solar-system/css/_planets.sass */
 .venus {
   height: 5px;
   width: 5px;
   right: -2.5px;
   background: #ffff99; }
 
-/* line 22, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-solar-system/css/_planets.sass */
+/* line 20, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-solar-system/css/_planets.sass */
 .earth {
   height: 5px;
   width: 5px;
   right: -2.5px;
   background: #14b1ff; }
 
-/* line 28, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-solar-system/css/_planets.sass */
+/* line 23, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-solar-system/css/_planets.sass */
 .mars {
   height: 3px;
   width: 3px;
   right: -1.5px;
   background: #cc3300; }
 
-/* line 34, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-solar-system/css/_planets.sass */
+/* line 26, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-solar-system/css/_planets.sass */
 .jupiter {
   height: 58px;
   width: 58px;
   right: -29px;
   background: #ff6f0f; }
 
-/* line 40, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-solar-system/css/_planets.sass */
+/* line 29, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-solar-system/css/_planets.sass */
 .saturn {
   height: 50px;
   width: 50px;
   right: -25px;
   background: #ffffb3; }
 
-/* line 46, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-solar-system/css/_planets.sass */
+/* line 32, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-solar-system/css/_planets.sass */
 .saturn-gap {
   height: 60px;
   width: 60px;
   right: -30px;
-  bottom: 482px;
-  background: black; }
+  background: black;
+  bottom: 482px; }
 
-/* line 53, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-solar-system/css/_planets.sass */
+/* line 36, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-solar-system/css/_planets.sass */
 .saturn-rings {
   height: 100px;
   width: 100px;
   right: -50px;
-  bottom: 462px;
-  background: #303030; }
+  background: #303030;
+  bottom: 462px; }
 
-/* line 60, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-solar-system/css/_planets.sass */
+/* line 40, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-solar-system/css/_planets.sass */
 .uranus {
   height: 22px;
   width: 22px;
   right: -11px;
   background: #14b1ff; }
 
-/* line 66, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-solar-system/css/_planets.sass */
+/* line 43, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-solar-system/css/_planets.sass */
 .neptune {
   height: 20px;
   width: 20px;
   right: -10px;
   background: #0085c7; }
 
-/* line 72, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-solar-system/css/_planets.sass */
+/* line 46, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-solar-system/css/_planets.sass */
 .pluto {
   height: 1px;
   width: 1px;
   right: -0.5px;
   background: #d1a375; }
+
+/* line 1, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-solar-system/css/_orbits.sass */
+.orbit, .sun, .mercury-orbit, .venus-orbit, .earth-orbit, .mars-orbit, .jupiter-orbit, .saturn-orbit, .uranus-orbit, .neptune-orbit, .pluto-orbit {
+  border: 1px solid #3d3d3d;
+  position: absolute;
+  border-radius: 50%;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-name: orbit;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  -moz-animation-name: orbit; }
+
+/* line 8, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-solar-system/css/_orbits.sass */
+.active-orbit {
+  border: 1px solid #ff7142; }
+
+/* line 11, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-solar-system/css/_orbits.sass */
+.mercury-orbit {
+  height: 586px;
+  width: 586px;
+  top: 864px;
+  left: 864px;
+  -webkit-animation-duration: 22s;
+  -moz-animation-duration: 22s; }
+
+/* line 14, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-solar-system/css/_orbits.sass */
+.venus-orbit {
+  height: 602px;
+  width: 602px;
+  top: 856px;
+  left: 856px;
+  -webkit-animation-duration: 56s;
+  -moz-animation-duration: 56s; }
+
+/* line 17, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-solar-system/css/_orbits.sass */
+.earth-orbit {
+  height: 614px;
+  width: 614px;
+  top: 850px;
+  left: 850px;
+  -webkit-animation-duration: 91s;
+  -moz-animation-duration: 91s; }
+
+/* line 20, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-solar-system/css/_orbits.sass */
+.mars-orbit {
+  height: 634px;
+  width: 634px;
+  top: 840px;
+  left: 840px;
+  -webkit-animation-duration: 172s;
+  -moz-animation-duration: 172s; }
+
+/* line 23, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-solar-system/css/_orbits.sass */
+.jupiter-orbit {
+  height: 790px;
+  width: 790px;
+  top: 762px;
+  left: 762px;
+  -webkit-animation-duration: 1083s;
+  -moz-animation-duration: 1083s; }
+
+/* line 26, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-solar-system/css/_orbits.sass */
+.saturn-orbit {
+  height: 974px;
+  width: 974px;
+  top: 670px;
+  left: 670px;
+  -webkit-animation-duration: 2690s;
+  -moz-animation-duration: 2690s; }
+
+/* line 29, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-solar-system/css/_orbits.sass */
+.uranus-orbit {
+  height: 1378px;
+  width: 1378px;
+  top: 468px;
+  left: 468px;
+  -webkit-animation-duration: 7671s;
+  -moz-animation-duration: 7671s; }
+
+/* line 32, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-solar-system/css/_orbits.sass */
+.neptune-orbit {
+  height: 1834px;
+  width: 1834px;
+  top: 240px;
+  left: 240px;
+  -webkit-animation-duration: 15048s;
+  -moz-animation-duration: 15048s; }
+
+/* line 35, /Users/dankim/dropbox/web/starterleague/homework/haml-sass-solar-system/css/_orbits.sass */
+.pluto-orbit {
+  height: 2314px;
+  width: 2314px;
+  top: 0;
+  left: 0;
+  -webkit-animation-duration: 22616s;
+  -moz-animation-duration: 22616s; }

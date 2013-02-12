@@ -1,0 +1,28 @@
+.name-list
+  margin: 2px 0 0 2px
+  padding: 2px
+  position: fixed
+  +top-left-position-offset(0, 0)
+  background: #0085C7
+  z-index: 1
+  border-radius: 3px
+  li
+    margin: 10px
+
+.active-list-item
+  color: #FF7142
+  text-decoration: underline
+
+.solar-system
+  +height-width(2314px, 2314px)
+  +top-left-position-offset(-75%, -50%)
+  @extend %center-box
+  position: absolute
+
+.shadow
+  /*Liberally borrowed from Nicholas Gallagher
+    http://nicolasgallagher.com/css-pseudo-element-solar-system/demo/*/
+  +box-shadow(-10px 0 10px rgba(0,0,0,0.75))
+
+.thanks
+  font-size: ($font-size-base * .8125)
